@@ -3,90 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
+    <title>Renan Kaye Portfolio</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
         </nav>
         <div>
             <i class="fas fa-moon toggle" onclick="toggleDark()"></i>
         </div>
     </header>
+    <div class="background"><div class="background-overlay"></div><img src="img/bg.jpeg" class="bg-image" /></div>
+    <div style="position:relative">
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="div-center">
+                <div class="div-box">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="div-center">
+                                <img src="img/pic1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="div-center" style="height:450px;">
+                                <div>
+                                    <h1>Turning ideas into working solutions</h1>
+                                    <p>Full Stack Developer focused on real-world systems, not just code.</p>
+                                    <a href="resume.pdf" class="btn outline">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <img src="img/pic.png">
+        <div class="div-container">
+            <div class="div-center">
+                <div class="div-box">
+                    <!--ABOUT-->
+                    <div id="about">
+                        <div class="div-center">
+                            <div class="col-md-12" style="padding-top:100px;">
+                                <h1>About Me</h1>
+                                <hr />
+                                <p>
+                                    I’m Renan Kaye Asuncion, a Full Stack Developer specializing in <strong>ASP.NET C# MVC</strong>, <strong>VB.NET</strong>, <strong>PHP</strong>, <strong>.NET MAUI</strong>, and <strong>WordPress</strong>,
+                                    building scalable web, desktop, and mobile applications. I handle everything from IIS server setup and configuration to full website development from scratch, including database design and system deployment. I deliver reliable, efficient, and user-focused solutions backed by strong experience in both software and hardware.
+                                </p>
+                                <p>
+                                    <div class="inline icon">✉</div>
+                                    <div class="inline text">renan23kaye@gmail.com</div>
+                                </p>
+                                <p>
+                                    <div class="inline icon">✆</div>
+                                    <div class="inline text">09851581113</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PROJECTS-->
+                    <div id="projects" style="padding-top:100px; margin-top:100px">
+                        <div class="div-center">
+                            <div class="col-md-12">
+                                <h1>Projects</h1>
+                                <hr />
+                                <div class="projects">
+                                    <div class="card">
+                                        <div style="text-align:center">
+                                            <img src="img/EcoLogo_1.png" />
+                                        </div>
+                                        <h3>Ecoverde Homes Website</h3>
+                                        <p>It provides key information about the company, such as its products or services, contact details, background, and updates, while also helping build credibility, attract customers, and support marketing and sales efforts.</p>
+                                        <p>
+                                            Techologies Used : Wordpress, HTML, CSS, JavaScript, PHP and MariaDB as database.
+                                        </p>
+                                        <p>
+                                            Type : Web Development
+                                        </p>
+                                        <p>
+                                            Link : <a href="https://ecoverdehomes.com/" target="_blank">https://ecoverdehomes.com/</a>
+                                        </p>
+                                    </div>
+                                    <div class="card">
+                                        <div style="text-align:center">
+                                            <img src="img/EcoLogo_1.png" />
+                                        </div>
+                                        <h3>Ecoverde Homes Cloud Storage</h3>
+                                        <p>An online service that allows users to store, access, and manage data over the internet instead of on local devices. It enables secure file backup, easy sharing, and access from anywhere.</p>
+                                        <p>
+                                            Techologies Used : ASP. Net C# MVC, HTML, CSS, Javascript and MariaDB as database.
+                                        </p>
+                                        <p>
+                                            Type : Web Development
+                                        </p>
+                                        <p>
+                                            Link : <a href="https://system.ecoverdehomes.com:5690/Cloud/Account/Login" target="_blank">https://cloud.ecoverdehomes.com/</a>
+                                        </p>
+                                    </div>
+                                    <div class="card">
+                                        <div style="text-align:center">
+                                            <img src="img/EcoLogo_1.png" />
+                                        </div>
+                                        <h3>Spin Wheel Game</h3>
+                                        <p>A Ecoverde Homes Marketing game to encourage clients to play and win exciting prizes.</p>
+                                        <p>
+                                            Techologies Used : PHP, HTML, CSS, Javascript and MariaDB as database.
+                                        </p>
+                                        <p>
+                                            Type : Web Development
+                                        </p>
+                                        <p>
+                                            Link : <a href="https://ecoverdehomes.com/Games/spinwheel" target="_blank">https://ecoverdehomes.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="card">
+                                        <div style="text-align:center">
+                                            <img src="img/EcoLogo_1.png" />
+                                        </div>
+                                        <h3>Management System</h3>
+                                        <p>An internal system of Ecoverde Homes which consist of HRIS, Finance, Broker/Agent System, Inventory, Manpower Tracking, IT Ticketing, Loan Document Management and others.</p>
+                                        <p>
+                                            Techologies Used : ASP. Net C# MVC, HTML, CSS, Javascript and MariaDB as database.
+                                        </p>
+                                        <p>
+                                            Type : Web Development
+                                        </p>
+                                        <p>
+                                            Link : <a href="https://system.ecoverdehomes.com:5690" target="_blank">https://system.ecoverdehomes.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-        <div class="hero-text">
-            <h1>Turning Vision Into Reality With Code And Design.</h1>
-            <p>Full-stack developer building modern web experiences.</p>
-            <a href="#" class="btn primary">Resume</a>
-            <a href="#contact" class="btn outline">Contact</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>I am a passionate developer focused on building responsive and modern applications.</p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h1>Projects</h1>
-
-        <div class="projects">
-            <div class="card">
-                <h3>Project One</h3>
-                <p>Short description here</p>
-            </div>
-
-            <div class="card">
-                <h3>Project Two</h3>
-                <p>Short description here</p>
-            </div>
-
-            <div class="card">
-                <h3>Project Three</h3>
-                <p>Short description here</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h1>Contact</h1>
-
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Email">
-            <textarea rows="5" placeholder="Message"></textarea>
-            <button class="btn primary">Send</button>
-        </form>
-    </section>
 
     <!-- Floating -->
     <div class="hire">Hire Me</div>
     <div class="bulb">💡</div>
 
     <script>
-  function toggleDark(){
-    document.body.classList.toggle("dark");
-  }
+        function toggleDark() {
+            document.body.classList.toggle("dark");
+        }
     </script>
 
 </body>
